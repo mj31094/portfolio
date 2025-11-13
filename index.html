@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mangesh Joshi | Java Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {--primary:#0066cc;--secondary:#00b4db;--dark-bg:#0b1625;--light-bg:#fff;--text-light:#f1f1f1;}
+    body{font-family:'Poppins',sans-serif;scroll-behavior:smooth;transition:.3s;}
+    body.dark{background:var(--dark-bg);color:var(--text-light);}
+    section{padding:70px 0;}
+    .hero{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;text-align:center;padding:140px 0;}
+    .hero h1{font-size:3rem;font-weight:700;}
+    .typing{font-size:1.3rem;color:#fff;font-weight:500;}
+    .section-title{text-align:center;font-weight:700;margin-bottom:40px;color:var(--primary);}
+    body.dark .section-title{color:var(--secondary);}
+    .skill-badge{background:#eaf4ff;color:var(--primary);border-radius:20px;padding:8px 15px;margin:5px;display:inline-block;}
+    .card{border:none;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,.15);}
+    footer{background:#002b5c;color:white;text-align:center;padding:25px;}
+    .toggle-btn{cursor:pointer;border:none;background:none;color:white;font-size:1.3rem;}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mangesh Joshi</a>
+    <button class="toggle-btn ms-2" id="themeToggle">🌓</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" data-aos="fade-up">
+  <div class="container">
+    <h1>Mangesh Joshi</h1>
+    <p class="typing" id="typing"></p>
+    <a href="resume.pdf" class="btn btn-light mt-3" download>📄 Download Resume</a>
+    <a href="#contact" class="btn btn-outline-light mt-3 ms-2">📧 Contact Me</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center">
+      Highly skilled Java Developer with 6+ years of experience in designing, developing, and maintaining Java-based applications. 
+      Specializing in core product and framework development, application security, performance optimization, and secure backend systems. 
+      Experienced in banking and finance domains with strong focus on authentication, authorization, and modern security standards.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light text-center">
+  <div class="container" data-aos="zoom-in">
+    <h2 class="section-title">Technical Expertise</h2>
+    <div>
+      <span class="skill-badge">Java</span><span class="skill-badge">J2EE</span>
+      <span class="skill-badge">Struts 2/7</span><span class="skill-badge">Spring Boot</span>
+      <span class="skill-badge">Hibernate</span><span class="skill-badge">REST API</span>
+      <span class="skill-badge">Oracle</span><span class="skill-badge">JBoss / Tomcat</span>
+      <span class="skill-badge">Kafka</span><span class="skill-badge">ELK Stack</span>
+      <span class="skill-badge">Maven</span><span class="skill-badge">Postman</span>
+      <span class="skill-badge">Git</span><span class="skill-badge">HTML5</span>
+      <span class="skill-badge">CSS3</span><span class="skill-badge">Bootstrap</span>
+      <span class="skill-badge">JavaScript</span>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Project Highlights</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>ACE – Centralized Security System</h5>
+          <p>Developed Multi-Factor Authentication (OTP, CAPTCHA, SMS/Email), AES encryption, and SHA-256 password hashing. 
+             Enhanced audit logs, mobile MFA, and Maker-Checker user management. Migrated Struts 2→7 and JDK 8→17.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>Loan Origination System (LOS)</h5>
+          <p>Optimized AAYU (Amortization Engine) for accurate XIRR financial calculations, improving reliability and performance.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>Collection Framework</h5>
+          <p>Enhanced search and filtering capabilities for account worklists with configurable sharing options and productivity improvements.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>College Admission System</h5>
+          <p>Built complete student admission management with role-based access, payment gateway, report generation, and ID card automation.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5>Quick Learno – E-Learning Platform</h5>
+          <p>Developed an e-learning platform for content distribution and management across institutes with secure data handling.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="bg-light">
+  <div class="container" data-aos="fade-right">
+    <h2 class="section-title">Professional Experience</h2>
+    <p><b>EbixCash Limited (Ebix Technologies Pvt. Ltd.)</b> — <i>Mar 2021 – Present</i></p>
+    <ul>
+      <li>Implemented MFA, encryption, and secure authentication mechanisms following OWASP standards.</li>
+      <li>Enhanced logging using Kafka + ELK, achieving near 99.99% async log reliability.</li>
+      <li>Upgraded applications from Struts 2→7 and JDK 8→17 improving performance and security.</li>
+      <li>Integrated audit trails, role-based access, and centralized user lifecycle management.</li>
+    </ul>
+    <p><b>Technolite Software Solution Pvt. Ltd.</b> — <i>Jul 2018 – Mar 2021</i></p>
+    <ul>
+      <li>Developed College Admission and Quick Learno systems end-to-end using Java, JSP, and Bootstrap.</li>
+      <li>Integrated MySQL DB, role-based control, payment gateway, and automatic ID generation.</li>
+      <li>Delivered responsive front-end design for enhanced UX and faster adoption.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <div class="container text-center" data-aos="zoom-in-up">
+    <h2 class="section-title">Education</h2>
+    <p>🎓 Master in Computer Science — N.M.U. Jalgaon (2018) | 62.08%</p>
+    <p>🎓 Bachelor in Computer Science — N.M.U. Jalgaon (2015) | 65%</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: <a href="mailto:mr.joshi1994@gmail.com">mr.joshi1994@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919096065076">+91 90960 65076</a></p>
+    <p>Pune, Maharashtra, India</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Mangesh Joshi | Java Developer Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({duration:800,once:true});
+  // Theme toggle
+  const toggle=document.getElementById('themeToggle');
+  toggle.onclick=()=>{document.body.classList.toggle('dark');
+    localStorage.setItem('theme',document.body.classList.contains('dark')?'dark':'light');};
+  if(localStorage.getItem('theme')==='dark')document.body.classList.add('dark');
+
+  // Typing animation
+  const roles=["Java Developer","Spring Framework Specialist","Backend Engineer"];
+  let part=0, partIndex=0, typingElem=document.getElementById("typing"), del=false;
+  function type(){
+    const text=roles[part].substring(0,partIndex);
+    typingElem.textContent=text;
+    if(!del && partIndex<roles[part].length){partIndex++;setTimeout(type,100);}
+    else if(del && partIndex>0){partIndex--;setTimeout(type,50);}
+    else{
+      del=!del;
+      if(!del){part=(part+1)%roles.length;}
+      setTimeout(type,800);
+    }
+  }
+  type();
+</script>
+</body>
+</html>
